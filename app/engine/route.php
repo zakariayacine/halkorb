@@ -23,6 +23,8 @@ $page = getPage($request , $routs);
 if(isset($page)){
 
     render($page['title'],$page['view'], $page['controller']);
+    include $GLOBALS['layouts'].'\nav.php';
+    echo "<div>";
     echo "</div>";
     echo "</body>";
     echo " </html>" ;

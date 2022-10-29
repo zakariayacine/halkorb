@@ -1,0 +1,116 @@
+/*startup logo annimation */
+.icone {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%,-50%);
+    height: 90px;
+}
+.icone path:nth-child(1) {
+    stroke: #25576e;
+    stroke-width: 5px;
+    stroke-dasharray: 1500px;
+    stroke-dashoffset: 1500px;
+    fill:rgba(255, 255, 255, 0);
+    animation: animOne 4s ease forwards;
+}
+.icone path:nth-child(2) {
+    stroke: #25576e;
+    stroke-width: 5px;
+    stroke-dasharray: 1500px;
+    stroke-dashoffset: 1500px;
+    fill:rgba(255, 255, 255, 0);
+    animation: animOne 4s ease forwards;
+}
+.icone path:nth-child(3) {
+    stroke: #25576e;
+    stroke-width: 5px;
+    stroke-dasharray: 1500px;
+    stroke-dashoffset: 1500px;
+    fill:rgba(255, 255, 255, 0);
+    animation: animOne 4s ease forwards;
+    
+}
+.icone path:nth-child(4) {
+    stroke: #25576e;
+    stroke-width: 5px;
+    stroke-dasharray: 1500px;
+    stroke-dashoffset: 1500px;
+    fill:#d1dbe000;
+    animation: animTow 4s ease forwards;
+}
+.icone path:nth-child(5) {
+    stroke: #25576e;
+    stroke-width: 5px;
+    stroke-dasharray: 1500px;
+    stroke-dashoffset: 1500px;
+    fill:#d1dbe000;
+    animation: animTow 4s ease forwards;
+}
+.icone path:nth-child(6) {
+    stroke: #25576e;
+    stroke-width: 5px;
+    stroke-dasharray: 1500px;
+    stroke-dashoffset: 1500px;
+    fill:#d1dbe000;
+    animation: animTow 4s ease forwards;
+}
+.icone path:nth-child(7) {
+    stroke: #25576e;
+    stroke-width: 5px;
+    stroke-dasharray: 1500px;
+    stroke-dashoffset: 1500px;
+    fill:#d1dbe000;
+    animation: animTow 4s ease forwards;
+}
+@keyframes animOne {
+    to {
+        stroke: rgba(251, 255, 0, 0);
+        stroke-dashoffset: 0;
+        fill:#fff;
+        stroke-width: 0px;
+        opacity: 0;
+    }
+}
+@keyframes animTow {
+    to {
+        stroke: rgba(251, 255, 0, 0);
+        stroke-dashoffset: 0;
+        fill:#414549;
+        stroke-width: 0px;
+        opacity: 0;
+    }
+}
+.startup-logo {
+    z-index: 1035;
+    position: fixed;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    background-color: #000000;
+    width: 100%;
+    height: 100vh;
+    animation: animStartup 0.9s ease forwards ;
+    animation-delay: 3s;
+}
+
+@keyframes animStartup {
+    to {
+        width: 0%;
+    }
+}
+@media (min-width:10px) and (max-width:554px) {
+    .icone {
+        left: 35%;
+        width: 400px ;
+        height : 40px;
+    }
+  }
+
+    @media (min-width:554px) and (max-width:1000px) {
+        .icone {
+            left: 35%;
+            width: 600px;
+            height : 60px;
+        }
+    }​
